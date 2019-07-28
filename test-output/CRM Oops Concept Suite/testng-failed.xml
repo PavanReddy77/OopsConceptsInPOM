@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CRM Oops Concept Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="CRM Firefox Tests(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.MyTests.HomePageTest">
+        <methods>
+          <include name="verifyHomePageUserNameTest"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.MyTests.HomePageTest -->
+    </classes>
+  </test> <!-- CRM Firefox Tests(failed) -->
+  <test name="CRM Chrome Tests(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.MyTests.HomePageTest">
+        <methods>
+          <include name="verifyHomePageUserNameTest"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.MyTests.HomePageTest -->
+    </classes>
+  </test> <!-- CRM Chrome Tests(failed) -->
+</suite> <!-- Failed suite [CRM Oops Concept Suite] -->

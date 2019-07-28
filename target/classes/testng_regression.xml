@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CRM Oops Concept Suite" parallel="tests">
+
+	<test name="CRM Chrome Tests">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.MyTests.LoginPageTest"/>
+			<class name="com.MyTests.HomePageTest"/>
+    	</classes>	
+	</test>
+	
+	<test name="CRM Firefox Tests">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="com.MyTests.LoginPageTest"/>
+			<class name="com.MyTests.HomePageTest"/>
+    	</classes>	
+	</test>
+</suite>

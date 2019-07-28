@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [CRM Regression Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="CRM Chrome Tests(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.MyTests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="doLoginTest"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.MyTests.LoginTest -->
+    </classes>
+  </test> <!-- CRM Chrome Tests(failed) -->
+</suite> <!-- Failed suite [CRM Regression Suite] -->
